@@ -1,0 +1,172 @@
+\documentclass[a4paper]{article}
+
+%==================== Packages ====================%
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[left=0.8in,right=0.8in,top=0.8in,bottom=0.8in]{geometry}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{textcomp}
+
+%==================== Page Style ====================%
+\pagestyle{empty}
+\raggedright
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+%==================== Custom Commands ====================%
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% Section header line
+\newcommand{\lineunder}{
+    \vspace*{-8pt}\\
+    \hspace*{-18pt}\hrulefill\\
+}
+
+% Section header
+\newcommand{\header}[1]{
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt}\lineunder
+}
+
+% Contact block
+\newcommand{\contact}[3]{
+    \vspace*{-10pt}
+    \begin{center}
+        {\Huge \scshape #1}\\
+        #2 \\ #3
+    \end{center}
+    \vspace*{-8pt}
+}
+
+% Employer block
+\newcommand{\employer}[3]{
+    {\textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\}
+}
+
+% Bulleted achievements environment
+\newenvironment{achievements}{
+    \begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep -2pt}
+    }{
+        \vspace*{4pt}
+    \end{list}
+}
+
+% Education blocks
+\newcommand{\schoolwithcourses}[4]{
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4\\[5pt]
+}
+
+\newcommand{\school}[4]{
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4\\
+}
+
+% Simple area + text line (used for coursework)
+\newcommand{\area}[2]{
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1} #2
+    \end{verse}
+}
+
+%==================== Document ====================%
+\begin{document}
+\small
+\vspace*{-40pt}
+
+%==== Profile ====%
+\begin{center}
+    {\Huge \scshape Kevin Esteban Quiceno Cardenas}\\
+    Bradenton, Florida $\cdot$ kevinestebanquicenocardenas@gmail.com $\cdot$ (786) 445-3474\\
+    \texttt{linkedin.com/in/kevin-esteban-quiceno-0b5b5b333} $\cdot$
+    \texttt{github.com/KevinEstebanQ}
+\end{center}
+
+%==== Objective ====%
+\header{Objective}
+Recent Computer Engineering graduate (Cum Laude) with interests in backend systems, distributed software, and computational problem solving. Currently strengthening Python fundamentals and data structures through LeetCode and positioning long-term towards backend and systems engineering with Java. Seeking an entry-level role applying analytical thinking, systems understanding, and backend-focused engineering skills.
+
+%==== Skills & Technologies ====%
+\header{Skills \& Technologies}
+
+\begin{tabular}{@{}p{3.2cm}p{12cm}@{}}
+\textbf{Programming:} &
+Python (primary), Java (growing), JavaScript (project-level), HTML/CSS \\[1pt]
+
+\textbf{Software/Backend:} &
+REST APIs, Asynchronous Programming, Local Client--Server Systems, Node.js (runtime) \\[1pt]
+
+\textbf{Systems \& Core CS:} &
+Data Structures, Algorithms, Operating Systems Concepts, Networking Fundamentals, Cybersecurity Basics, Reverse Engineering \\[1pt]
+
+\textbf{Tools:} &
+Git, Linux, VS Code, Wireshark, Vivado (academic) \\[1pt]
+
+\textbf{Interests:} &
+Backend Systems, Distributed Systems, ML/AI, System Integration, Computational Thinking \\
+\end{tabular}
+
+%==== Education ====%
+\header{Education}
+
+\school
+{Florida International University --- College of Engineering}
+{Miami, FL}
+{Bachelor of Science in Computer Engineering}
+{Graduated December 2025 $\cdot$ GPA: 3.64 $\cdot$ Degree Honors: Cum Laude}
+
+\area{Relevant Coursework:}{
+Data Structures (Java), Systems Programming (C), Malware Reverse Engineering, Ethical Hacking, Embedded Programming (C), Logic Design, Python Programming, Senior Design I \& II (Team Lead + Integration)
+}
+
+%==== Technical Projects ====%
+\header{Technical Projects}
+
+\textbf{Artalock Smart Access System --- UI Subsystem} \hfill Team Lead \& Software Developer\\
+\textit{Tech: JavaScript, Node.js (Electron Runtime), REST APIs, Git}\\[-4pt]
+\begin{achievements}
+    \item Developed the desktop application layer for a facial-recognition access control system designed for corporate environments.
+    \item Implemented communication interfaces between the UI and a local server that communicated with a Jetson Nano, handling user permissions and access rules.
+    \item Led a 5-student engineering team across two semesters to deliver the system for FIU College of Engineering evaluation.
+    \item Learned the required UI technologies rapidly to ensure project continuity and integration.
+    \item Successfully demoed the system with real-time multi-user authentication and role-based access control during the final defense.
+\end{achievements}
+
+\textbf{Amazon Product Page Mimic --- Asynchronous UI} \hfill Developer\\
+\textit{Tech: JavaScript, HTML, CSS, Git}\\[-4pt]
+\begin{achievements}
+    \item Built a mock e-commerce product interface to practice asynchronous programming and client--server interactions.
+    \item Fetched and rendered product data from remote API endpoints to simulate real-time backend communication.
+    \item Practiced DOM manipulation, JSON parsing, and separation of concerns between backend data and UI state.
+\end{achievements}
+
+%==== Work Experience ====%
+\header{Work Experience}
+
+\employer{Inmigraci\'on USA TPS LLC}{Bradenton, FL}{Lead Translator + IT/Systems Support (Jan 2024 -- Dec 2025)}
+\begin{achievements}
+    \item Translated official documents (Spanish $\rightarrow$ English) maintaining legal accuracy and consistency for USCIS submissions.
+    \item Provided internal IT support by diagnosing software issues, configuring workstations, and assembling new computer hardware.
+    \item Updated and maintained the company website, resolving UI issues and improving usability for clients.
+    \item Assisted non-technical staff in understanding digital tools and workflows, reducing reliance on external technical support.
+\end{achievements}
+
+%==== Achievements ====%
+\header{Achievements}
+\begin{achievements}
+    \item Graduated Cum Laude from the FIU College of Engineering.
+\end{achievements}
+
+%==== Additional Activities ====%
+\header{Additional Activities}
+\begin{achievements}
+    \item Practicing data structures and algorithms via LeetCode using Python and Java; pushing notes and solutions to GitHub for long-term mastery.
+    \item Engineering interests include backend systems, AI/ML, computational problem solving, security, and embedded computing.
+\end{achievements}
+
+\end{document}
