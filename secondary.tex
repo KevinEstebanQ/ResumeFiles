@@ -1,0 +1,125 @@
+%========================
+% Kevin Esteban Quiceno Cardenas — ATS-Friendly Resume (1 Page / US Letter)
+% Single-column, no tables/icons, clean spacing, Overleaf-ready
+%========================
+\documentclass[10pt]{article}
+
+\usepackage[letterpaper,left=0.78in,right=0.78in,top=0.62in,bottom=0.62in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\usepackage{microtype}
+
+\pagenumbering{gobble}
+\urlstyle{same}
+
+%========================
+% Global spacing (tight but readable)
+%========================
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{2pt}
+\linespread{0.98}
+
+% Section headers (sleek + compact)
+\titleformat{\section}{\small\bfseries}{}{0pt}{}[\vspace{2pt}\titlerule]
+\titlespacing*{\section}{0pt}{7pt}{4pt}
+
+% Tight itemize
+\setlist[itemize]{leftmargin=*, topsep=1pt, itemsep=1pt, parsep=0pt, partopsep=0pt}
+
+% Helpers
+\newcommand{\sep}{\;\;|\;\;}
+\newcommand{\skill}[2]{\textbf{#1:} #2}
+
+\begin{document}
+
+%========================
+% Header (compact + ATS safe)
+%========================
+{\Large \textbf{KEVIN ESTEBAN QUICENO CARDENAS}}\\
+\textbf{Entry-Level Backend Engineer \sep \textbf{Python (FastAPI)} \sep \textbf{SQLAlchemy} \sep \textbf{REST APIs} \sep \textbf{SQL} \sep \textbf{Git}}\\
+Bradenton, FL \sep (786) 445-3474 \sep \href{mailto:kevinestebanquicenocardenas@gmail.com}{kevinestebanquicenocardenas@gmail.com}\\
+LinkedIn: \href{https://linkedin.com/in/kevin-esteban-quiceno-0b5b5b333}{linkedin.com/in/kevin-esteban-quiceno-0b5b5b333}
+\sep GitHub: \href{https://github.com/KevinEstebanQ}{github.com/KevinEstebanQ}
+\sep \textbf{U.S. Work Authorized (No sponsorship)}
+
+\vspace{2pt}
+
+%========================
+% Summary
+%========================
+\section{SUMMARY}
+\small
+FIU Computer Engineering graduate (Cum Laude, GPA 3.64) targeting \textbf{backend} roles. Built \textbf{FastAPI} \textbf{REST} services with \textbf{SQLAlchemy ORM}, \textbf{Pydantic} validation, \textbf{password hashing}, and \textbf{JWT authentication}. Strong CS fundamentals (\textbf{data structures}, \textbf{systems programming}) and experience operating a live website (\textbf{DNS/SSL/hosting}). Seeking Backend Engineer / Software Engineer I roles (Remote or Hybrid in Tampa Bay).
+\normalsize
+
+%========================
+% Technical Skills
+%========================
+\section{TECHNICAL SKILLS}
+\small
+\skill{Core Backend Keywords}{\textbf{FastAPI} \sep \textbf{REST APIs} \sep \textbf{SQLAlchemy} \sep \textbf{JWT} \sep \textbf{OAuth2} \sep \textbf{Pydantic} \sep \textbf{OpenAPI} \sep \textbf{SQL/SQLite}}\\
+\skill{Backend}{\textbf{FastAPI}, \textbf{REST APIs}, \textbf{SQLAlchemy}, \textbf{JWT Authentication}, \textbf{Password Hashing}, \textbf{Pydantic Validation}, \textbf{OpenAPI/Swagger}.}\\
+\skill{Languages}{\textbf{Python}, Java, JavaScript, HTML/CSS.}\\
+\skill{Databases}{\textbf{SQL}, \textbf{SQLite}.}\\
+\skill{Tools/Systems}{\textbf{Git/GitHub}, \textbf{Linux}, Windows, VS Code, IntelliJ IDEA.}\\
+\skill{CS Fundamentals}{\textbf{Data Structures \& Algorithms}; Discrete Structures; \textbf{Systems Programming}; \textbf{Operating Systems}.}\\
+\skill{Certifications}{Microsoft Azure Fundamentals (AZ-900); Microsoft AI Fundamentals (AI-900); Microsoft Office Excel Specialist 2019.}
+\normalsize
+
+%========================
+% Experience
+%========================
+\section{EXPERIENCE}
+
+\textbf{VIZA Migrant-Pro Solutions USA} \hfill Sarasota/Bradenton, FL\\
+\textbf{IT \& Web Systems Lead (Founding / Part-Time)} \hfill 2023--Present
+\begin{itemize}
+  \small
+  \item Built and administer a production website (\textbf{HTML/CSS/JavaScript}): \href{https://tpsinmigracionusa.com}{tpsinmigracionusa.com}.
+  \item Owned operations: \textbf{hosting}, \textbf{domains/DNS}, \textbf{SSL lifecycle}, updates, backups, and reliability improvements.
+  \item Provided internal technical support: workstation setup, printer/scanner troubleshooting, user access, and documentation workflows.
+  \item Supported digital operations for a media channel with \textbf{66,400+ YouTube subscribers} and \textbf{620+ published videos}.
+\end{itemize}
+\normalsize
+
+%========================
+% Technical Projects
+%========================
+\section{TECHNICAL PROJECTS}
+
+\textbf{FinanceTrackerService — Backend API (\textbf{FastAPI}, \textbf{SQLAlchemy}, \textbf{SQLite})} \hfill 2024--Present
+\begin{itemize}
+  \small
+  \item Built a \textbf{FastAPI} \textbf{REST API} for personal finance tracking with user accounts and relational persistence (\textbf{SQLAlchemy ORM} + \textbf{SQLite}).
+  \item Implemented user registration and authentication with \textbf{password hashing} and \textbf{JWT-based login}; secured \textbf{protected routes}.
+  \item Designed request/response contracts using \textbf{Pydantic validation}; published interactive API documentation via \textbf{OpenAPI}.
+  \item Delivered a reproducible local dev workflow (\textbf{venv}, \textbf{environment variables}, requirements, \textbf{Uvicorn}) with a Quickstart README.
+\end{itemize}
+\normalsize
+
+\textbf{ArtaLock Smart Access System — Team Lead \& Software Developer (FIU Senior Design)} \hfill 2025
+\begin{itemize}
+  \small
+  \item Delivered a cross-platform desktop application integrated with a \textbf{local server} for access control workflows and \textbf{multi-user} operation.
+  \item Implemented a secure \textbf{IPC bridge} between UI and system services; supported a working demo architecture for final evaluation.
+  \item Led a 5-student team across two semesters through integration, testing, and final defense delivery.
+\end{itemize}
+\normalsize
+
+%========================
+% Education
+%========================
+\section{EDUCATION}
+
+\textbf{Florida International University (FIU)} \hfill Miami, FL\\
+\textbf{B.S. Computer Engineering, Cum Laude} \hfill Dec 2025\\
+\small
+GPA: \textbf{3.64} \sep Dean's List (multiple terms)\\
+Selected Coursework: \textbf{Data Structures}; \textbf{Systems Programming (C)}; Discrete Structures; \textbf{Operating Systems}; Big Data Analytics; Analytics \& Cloud
+\normalsize
+
+\end{document}
